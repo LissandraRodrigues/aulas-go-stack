@@ -49,21 +49,31 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 - [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-02/'> Nível 2 </a>
 
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-02/projeto-node'> Primeiro projeto com NodeJS </a>
-	- [ ] <a href=''> Iniciando back-end do App </a>
+	- [ ] Iniciando back-end do App 
 	
-- [ ] <a href=''> Nível 3 </a>
+- [ ] Nível 3 
 
-	- [ ] <a href=''> Primeiro projeto com React </a>
-	- [ ] <a href=''> Iniciando front-end web </a> 
-	- [ ] <a href=''> Iniciando aplicativo mobile </a>
+	- [ ] Primeiro projeto com React
+	- [ ] Iniciando front-end web
+	- [ ] Iniciando aplicativo mobile
 	
-- [ ] <a href=''> Nível 4 </a>
+- [ ] Nível 4
 
-	- [ ] <a href=''> Arquitetura e testes no NodeJS <a/>
-	- [ ] <a href=''> Continuando back-end do App </a>
-	- [ ] <a href=''> Finalizando back-end do App </a>
+	- [ ] Arquitetura e testes no NodeJS 
+	- [ ] Continuando back-end do App
+	- [ ] Finalizando back-end do App 
 	
-- [ ] <a href=''> Nível 5 </a> 
+- [ ] Nível 5 
+
+	- [ ] Finalizando front-end web do App
+	- [ ] Finalizando front-end mobile do App
+	- [ ] Testes no ReactJS
+
+- [ ] Nível 6
+
+	- [ ] Deploy de aplicações NodeJS
+	- [ ] Deploy de aplicações ReactJS
+	- [ ] Publicação de Apps com React Native
 	
 ## :books: Onde aprender mais ##
 
