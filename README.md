@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="#dart-sobre"> Sobre </a> &#xa0; | &#xa0; 
-  <a href="#dart-sobre"> Sumário </a> &#xa0; | &#xa0; 
+  <a href="#page_with_curl-sumario"> Sumário </a> &#xa0; | &#xa0; 
   <a href="#books-onde-aprender-mais"> Onde aprender </a> &#xa0; | &#xa0;
   <a href="#unlock-licença"> Licença </a> &#xa0; | &#xa0;
   <a href="https://www.linkedin.com/in/luiza-lissandra/" target="_blank"> Desenvolvedora </a>
