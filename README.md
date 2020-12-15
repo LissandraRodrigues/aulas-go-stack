@@ -19,6 +19,7 @@
 
 <p align="center">
   <a href="#dart-sobre"> Sobre </a> &#xa0; | &#xa0; 
+  <a href="#dart-sobre"> Sumário </a> &#xa0; | &#xa0; 
   <a href="#books-onde-aprender-mais"> Onde aprender </a> &#xa0; | &#xa0;
   <a href="#unlock-licença"> Licença </a> &#xa0; | &#xa0;
   <a href="https://www.linkedin.com/in/luiza-lissandra/" target="_blank"> Desenvolvedora </a>
@@ -36,6 +37,34 @@ Este repositório foi criado para reunir todos os projetos feitos nas aulas que 
 
 Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da Rocketseat <a href='https://github.com/LissandraRodrigues/go-stack'> neste link. </a>
 
+## :page_with_curl: Sumário dos projetos das aulas ##
+
+- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-01'> Nível 1 </a>
+
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-01/backend'> Back-end com NodeJS </a>
+	- [X] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-01/frontend'> Front-end com ReactJS </a>
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-01/mobile'>Mobile com React Native </a>
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-01/typescript'> Typescript </a>
+
+- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-02/'> Nível 2 </a>
+
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-02/projeto-node'> Primeiro projeto com NodeJS </a>
+	- [ ] <a href=''> Iniciando back-end do App </a>
+	
+- [ ] <a href=''> Nível 3 </a>
+
+	- [ ] <a href=''> Primeiro projeto com React </a>
+	- [ ] <a href=''> Iniciando front-end web </a> 
+	- [ ] <a href=''> Iniciando aplicativo mobile </a>
+	
+- [ ] <a href=''> Nível 4 </a>
+
+	- [ ] <a href=''> Arquitetura e testes no NodeJS <a/>
+	- [ ] <a href=''> Continuando back-end do App </a>
+	- [ ] <a href=''> Finalizando back-end do App </a>
+	
+- [ ] <a href=''> Nível 5 </a> 
+	
 ## :books: Onde aprender mais ##
 
 - <a href='https://www.notion.so/Go-Stack-14-0dd11467d0d140c4bf2e9bef09ea9fac'> Meus artigos sobre tudo que aprendi no Gostack </a>
