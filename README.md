@@ -49,7 +49,7 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 - [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-02/'> Nível 2 </a>
 
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-02/projeto-node'> Primeiro projeto com NodeJS </a>
-	- [ ] Iniciando back-end do App 
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-02/iniciando-back-end'> Iniciando back-end do App </a> 
 	
 - [ ] Nível 3 
 
