@@ -9,7 +9,7 @@
 <h1 align="center"> Aulas do GoStack </h1>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/progress-17%25-brightgreen.svg" alt="PRs Welcome">
+   <img src="https://img.shields.io/badge/progress-34%25-brightgreen.svg" alt="PRs Welcome">
    <img src = "https://img.shields.io/github/issues/LissandraRodrigues/aulas-go-stack" />
    <img src = "https://img.shields.io/github/forks/LissandraRodrigues/aulas-go-stack" />
    <img src = "https://img.shields.io/github/stars/LissandraRodrigues/aulas-go-stack" />
