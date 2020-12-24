@@ -53,7 +53,7 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 	
 - [ ] Nível 3 
 
-	- [ ] Primeiro projeto com React
+	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-03/primeiro-projeto-react'> Primeiro projeto com React </a>
 	- [ ] Iniciando front-end web
 	- [ ] Iniciando aplicativo mobile
 	
