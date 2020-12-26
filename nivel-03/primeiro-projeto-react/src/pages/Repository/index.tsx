@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link, useRouteMatch } from 'react-router-dom';
 
@@ -7,14 +7,72 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 import { Header, RepositoryInfo, Issues } from './styles';
 
+import api from '../../services/api';
+
 interface RepositoryParams {
     repository: string;
 }
 
+interface Repository {
+
+    full_name: string;
+    description: string;
+    stargazers_count: number;
+    forks_count: number;
+    open_issues_count: number;
+    owner: {
+
+        login: string;
+        avatar_url: string;
+
+    };
+
+}
+
+interface Issue {
+    id: number;
+    title: string;
+    user:  {
+        login: string;
+    };
+    html_url: string;
+
+}
+
 // FC -> Function Component.
-const Repository: React.FC = () => {
+const RepositoryPage: React.FC = () => {
+
+    const [ repository, setRepository ] = useState<Repository | null>(null);
+
+    const [ issues, setIssues ] = useState<Issue[]>([]);
 
     const { params } = useRouteMatch<RepositoryParams>();
+
+    useEffect(() => {
+
+        api.get(`repos/${params.repository}`).then(response => {
+            setRepository(response.data);
+        }); 
+
+        api.get(`repos/${params.repository}/issues`).then(response => {
+            setIssues(response.data);
+        }); 
+
+        // UMA ALTERNATIVA
+
+        // async function loadData(): Promise<void> {
+
+        //     const [ repository, issues ] = await Promise.all([
+
+        //         api.get(`repos/${params.repository}`),
+        //         api.get(`repos/${params.repository}/issues`)
+        //     ]);
+
+        // }
+
+        // loadData();
+
+    }, [params.repository]);
 
     return (
 
@@ -37,62 +95,74 @@ const Repository: React.FC = () => {
 
             </Header>
 
-            <RepositoryInfo>
-                
-                <header>
+            { repository ? (
 
-                    <img src='https://avatars0.githubusercontent.com/u/34509117?s=460&u=8982a6730a6896931d9fb725503125331fce43c3&v=4' alt="Luiza Lissandra" />    
+                <RepositoryInfo>
+                    
+                    <header>
 
-                    <div> 
+                        <img src={repository.owner.avatar_url} alt={repository.owner.login} />    
 
-                        <strong> Luiza Lissandra </strong>
-                        <p> Descrição </p>
+                        <div> 
 
-                    </div> 
+                            <strong> {repository.full_name} </strong>
+                            <p> {repository.description} </p>
 
-                </header>
-                
-                <ul>
+                        </div> 
 
-                    <li> 
+                    </header>
+                    
+                    <ul>
 
-                        <strong> 333 </strong>
-                        <span> Stars </span>
+                        <li> 
 
-                    </li>    
+                            <strong> {repository.stargazers_count} </strong>
+                            <span> Stars </span>
 
-                    <li> 
+                        </li>    
 
-                        <strong> 33 </strong>
-                        <span> Forks </span>
+                        <li> 
 
-                    </li> 
+                            <strong> {repository.forks_count} </strong>
+                            <span> Forks </span>
 
-                    <li> 
+                        </li> 
 
-                        <strong> 3 </strong>
-                        <span> Issues abertas </span>
+                        <li> 
 
-                    </li>   
+                            <strong> {repository.open_issues_count} </strong>
+                            <span> Issues abertas </span>
 
-                </ul>
+                        </li>   
 
-            </RepositoryInfo> 
+                    </ul>
+
+                </RepositoryInfo> 
+
+            ) : (
+
+                <p> Carregando... </p>
+
+            )}
 
             <Issues> 
 
-                <Link to='teste'> 
-                                
-                    <div>
+               {issues.map(issue => (
 
-                        <strong> yfg </strong>
-                        <p> fjc </p>
+                    <a key={issue.id} href={issue.html_url}> 
+                                                    
+                        <div>
 
-                    </div>
+                            <strong> {issue.title} </strong>
+                            <p> {issue.user.login} </p>
 
-                    <FiChevronRight size={20} />
+                        </div>
 
-                </Link>  
+                        <FiChevronRight size={20} />
+
+                    </a>  
+
+               ))}
 
             </Issues>
 
@@ -101,4 +171,4 @@ const Repository: React.FC = () => {
     );
 };
 
-export default Repository;
+export default RepositoryPage;
