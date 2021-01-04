@@ -55,7 +55,7 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-03/primeiro-projeto-react'> Primeiro projeto com React </a>
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-03/iniciando-front-end-web'> Iniciando front-end web </a>
-	- [ ] Iniciando aplicativo mobile
+	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-03/appgobarber'> Iniciando aplicativo mobile </a>
 	
 - [ ] Nível 4
 
