@@ -19,10 +19,11 @@ import Icon from 'react-native-vector-icons/Feather';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 
+import getValidationErrors from '../../utils/getValidationErrors';
+import { useAuth } from '../../hooks/auth';
+
 // IMAGENS
 import logoImg from '../../assets/logo.png';
-
-import getValidationErrors from '../../utils/getValidationErrors';
 
 // STYLED COMPONENTS
 import {
@@ -51,11 +52,9 @@ const SignIn: React.FC = () => {
 
   const navigation = useNavigation();
 
-  // WEB
+  const { signIn } = useAuth();
 
-  //const { signIn } = useAuth();
-
- // const history = useHistory();
+  // const history = useHistory();
 
   const handleSignIn = useCallback(
     async (data: SignInFormData) => {
@@ -73,11 +72,11 @@ const SignIn: React.FC = () => {
           // Faz com que o Yup não pare no primeiro erro. Por padrão é true.
           abortEarly: false,
         });
-        //await signIn({
-        //  email: data.email,
-        //  password: data.password,
-       // });
-        //history.push('/dashboard');
+        await signIn({
+          email: data.email,
+          password: data.password,
+        });
+
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
@@ -95,7 +94,7 @@ const SignIn: React.FC = () => {
         )
       }
     },
-    [],
+    [signIn],
   );
 
   return (

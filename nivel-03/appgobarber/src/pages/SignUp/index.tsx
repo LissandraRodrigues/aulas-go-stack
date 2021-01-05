@@ -11,6 +11,8 @@ import Icon from 'react-native-vector-icons/Feather';
 
 import * as Yup from 'yup';
 
+import api from '../../services/api';
+
 import getValidationErrors from '../../utils/getValidationErrors';
 
 // STYLED COMPONENTS
@@ -55,9 +57,7 @@ const SignUp: React.FC = () => {
           abortEarly: false,
         });
 
-       // await api.post('/users', data);
-
-       // history.push('/');
+        await api.post('/users', data);
 
         Alert.alert(
 
@@ -65,6 +65,8 @@ const SignUp: React.FC = () => {
           'Você já pode fazer seu logon!',
 
         )
+
+       navigation.goBack();
 
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
@@ -83,7 +85,7 @@ const SignUp: React.FC = () => {
 
       }
     },
-    [],
+    [navigation],
   );
 
   return (
