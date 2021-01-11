@@ -1,19 +1,18 @@
 // import 'reflect-metadata';
 import AppError from '@shared/errors/AppError';
-import FakeUserRepository from '../repositories/fakes/FakeUsersRepository';
+import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository';
 import CreateUserService from './CreateUserService';
 
 import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider';
-
 
 describe('CreateUser', () => {
 
     it('should be able to create a new user', async () => {
 
-        const fakeUserRepository = new FakeUserRepository();
+        const fakeUsersRepository = new FakeUsersRepository();
         const fakeHashProvider = new FakeHashProvider();
 
-        const createUser = new CreateUserService(fakeUserRepository, fakeHashProvider);
+        const createUser = new CreateUserService(fakeUsersRepository, fakeHashProvider);
 
         const user = await createUser.execute({
 
@@ -25,14 +24,14 @@ describe('CreateUser', () => {
 
         expect(user).toHaveProperty('id');
 
-    })
+    });
 
     it('should not be able to create a new user with same email from another', async () => {
 
-        const fakeUserRepository = new FakeUserRepository();
+        const fakeUsersRepository = new FakeUsersRepository();
         const fakeHashProvider = new FakeHashProvider();
 
-        const createUser = new CreateUserService(fakeUserRepository, fakeHashProvider);
+        const createUser = new CreateUserService(fakeUsersRepository, fakeHashProvider);
 
         await createUser.execute({
 
@@ -50,7 +49,7 @@ describe('CreateUser', () => {
 
         })).rejects.toBeInstanceOf(AppError);
 
-    })
+    });
 
 });
 
