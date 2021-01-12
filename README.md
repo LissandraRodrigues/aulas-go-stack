@@ -9,7 +9,7 @@
 <h1 align="center"> Aulas do GoStack </h1>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/progress-50%25-brightgreen.svg" alt="PRs Welcome">
+   <img src="https://img.shields.io/badge/progress-70%25-brightgreen.svg" alt="PRs Welcome">
    <img src = "https://img.shields.io/github/issues/LissandraRodrigues/aulas-go-stack" />
    <img src = "https://img.shields.io/github/forks/LissandraRodrigues/aulas-go-stack" />
    <img src = "https://img.shields.io/github/stars/LissandraRodrigues/aulas-go-stack" />
@@ -59,9 +59,9 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 	
 - [ ] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/"> Nível 4 </a>
 
-	- [x] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/iniciando-back-end"> Arquitetura e testes no NodeJS </a>
+	- [x] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/arquitetura-e-testes-nodejs"> Arquitetura e testes no NodeJS </a>
 	
-	- [ ] Continuando back-end do App
+	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/continuando-back-end'> Continuando back-end do App </a>
 	
 	- [ ] Finalizando back-end do App 
 	
