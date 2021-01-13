@@ -5,7 +5,7 @@ import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO';
 
 import { v4 as uuid } from 'uuid';
 
-class UsersRepository implements IUsersRepository {
+class FakeUsersRepository implements IUsersRepository {
 
     private users: User[] = [];
 
@@ -49,4 +49,4 @@ class UsersRepository implements IUsersRepository {
 
 }
 
-export default UsersRepository;
+export default FakeUsersRepository;
