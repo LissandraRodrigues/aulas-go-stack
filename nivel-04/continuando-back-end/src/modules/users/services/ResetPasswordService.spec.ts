@@ -1,7 +1,7 @@
 // import 'reflect-metadata';
 
 import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository';
-import FakeUsersTokensRepository from '../repositories/fakes/FakeUsersTokensRepository';
+import FakeUserTokensRepository from '../repositories/fakes/FakeUserTokensRepository';
 import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider';
 
 import ResetPasswordService from './ResetPasswordService';
@@ -9,7 +9,7 @@ import ResetPasswordService from './ResetPasswordService';
 import AppError from '@shared/errors/AppError';
 
 let fakeUsersRepository: FakeUsersRepository;
-let fakeUsersTokensRepository: FakeUsersTokensRepository;
+let fakeUserTokensRepository: FakeUserTokensRepository;
 let fakeHashProvider: FakeHashProvider;
 
 let resetPassword: ResetPasswordService;
@@ -19,10 +19,10 @@ describe('ResestPasswordService', () => {
     beforeEach(() => {
 
         fakeUsersRepository = new FakeUsersRepository();
-        fakeUsersTokensRepository = new FakeUsersTokensRepository();
+        fakeUserTokensRepository = new FakeUserTokensRepository();
         fakeHashProvider = new FakeHashProvider();
 
-        resetPassword = new ResetPasswordService(fakeUsersRepository, fakeUsersTokensRepository, fakeHashProvider);
+        resetPassword = new ResetPasswordService(fakeUsersRepository, fakeUserTokensRepository, fakeHashProvider);
 
     });
 
@@ -36,7 +36,7 @@ describe('ResestPasswordService', () => {
 
         });
 
-        const { token } = await fakeUsersTokensRepository.generate(user.id);
+        const { token } = await fakeUserTokensRepository.generate(user.id);
 
         const generateHash = jest.spyOn(fakeHashProvider, 'generateHash');
 
@@ -71,7 +71,7 @@ describe('ResestPasswordService', () => {
 
     it('should not be able to reset the password with non-existing user', async () => {
 
-        const { token } = await fakeUsersTokensRepository.generate('non-existing-user');
+        const { token } = await fakeUserTokensRepository.generate('non-existing-user');
 
         await expect(
 
@@ -96,7 +96,7 @@ describe('ResestPasswordService', () => {
 
         });
 
-        const { token } = await fakeUsersTokensRepository.generate(user.id);
+        const { token } = await fakeUserTokensRepository.generate(user.id);
 
         jest.spyOn(Date, 'now').mockImplementationOnce(() => {
 
