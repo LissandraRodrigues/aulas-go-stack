@@ -3,12 +3,12 @@ import AppError from '@shared/errors/AppError';
 
 import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository';
 import FakeStorageProvider from '@shared/container/providers/StorageProvider/fakes/FakeStorageProvider';
-import UpdateUserAvatar from './UpdateUserAvatarService';
+import UpdateUserAvatarService from './UpdateUserAvatarService';
 
 let fakeUsersRepository: FakeUsersRepository;
 let fakeStorageProvider: FakeStorageProvider;
 
-let updateUserAvatar: UpdateUserAvatar;
+let updateUserAvatar: UpdateUserAvatarService;
 
 describe('UpdateUserAvatar', () => {
 
@@ -17,7 +17,7 @@ describe('UpdateUserAvatar', () => {
         fakeUsersRepository = new FakeUsersRepository();
         fakeStorageProvider = new FakeStorageProvider();
 
-        updateUserAvatar = new UpdateUserAvatar(fakeUsersRepository, fakeStorageProvider);
+        updateUserAvatar = new UpdateUserAvatarService(fakeUsersRepository, fakeStorageProvider);
 
     })
 
