@@ -34,7 +34,7 @@ describe('ListProviderMonthAvailability', () => {
         await fakeAppointmentsRepository.create({
 
             provider_id: 'user',
-            date: new Date(2021, 4, 22, 10, 0, 0),
+            date: new Date(2021, 4, 21, 10, 0, 0),
 
         });
 
@@ -94,15 +94,23 @@ describe('ListProviderMonthAvailability', () => {
 
         });
 
+        const availability = await listProviderMonthAvailabilityService.execute({
 
-        expect.arrayContaining([
+            provider_id: 'user',
+            year: 2021,
+            month: 5,
+
+        });
+
+        expect(availability).toEqual(
+            expect.arrayContaining([
 
             { day: 19, available: true },
             { day: 20, available: true },
             { day: 21, available: false },
             { day: 22, available: true },
 
-        ]);
+        ]));
 
     });
 
