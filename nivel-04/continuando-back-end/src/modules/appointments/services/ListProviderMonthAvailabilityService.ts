@@ -51,8 +51,6 @@ class ListProviderMonthAvailabilityService {
 
         );
 
-        //const nowDate = Date.now();
-
         const availability = eachDayArray.map(day => {
 
             const compareDate = new Date(year, month - 1, day, 23, 59, 59);
