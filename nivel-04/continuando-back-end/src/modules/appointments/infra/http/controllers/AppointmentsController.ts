@@ -9,7 +9,9 @@ export default class AppointmentsController {
 
     public async create(request: Request, response: Response): Promise<Response> {
 
-            // Provider é o nome do barbeiro/cabelereiro.
+        const user_id = request.user.id;
+
+        // Provider é o nome do barbeiro/cabelereiro.
         const { provider_id, date } = request.body;
 
         // Formatação da data/hora.
@@ -19,6 +21,7 @@ export default class AppointmentsController {
 
         const appointment = await createAppointment.execute({
             provider_id,
+            user_id,
             date: parsedDate,
         });
 
