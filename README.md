@@ -61,9 +61,9 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 
 	- [x] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/arquitetura-e-testes-nodejs"> Arquitetura e testes no NodeJS </a>
 	
-	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/continuando-back-end'> Continuando back-end do App </a>
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/continuando-back-end'> Continuando back-end do App </a>
 	
-	- [ ] Finalizando back-end do App 
+	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/finalizando-back-end'> Finalizando back-end do App </a>
 	
 - [ ] Nível 5 
 
