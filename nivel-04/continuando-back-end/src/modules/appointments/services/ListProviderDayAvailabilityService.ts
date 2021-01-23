@@ -3,7 +3,6 @@ import { injectable, inject } from 'tsyringe';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
 import { getHours, isAfter } from 'date-fns';
-//import Appointment from '../infra/typeorm/entities/Appointment';
 
 interface IRequest {
 
