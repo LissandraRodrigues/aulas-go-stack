@@ -3,3 +3,6 @@ tmp/*
 .DS_Store
 .vscode/
 node_modules
+.env
+ormconfig.json
+coverage
