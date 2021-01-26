@@ -14,15 +14,12 @@ export default class AppointmentsController {
         // Provider é o nome do barbeiro/cabelereiro.
         const { provider_id, date } = request.body;
 
-        // Formatação da data/hora.
-        const parsedDate = parseISO(date);
-
         const createAppointment = container.resolve(CreateAppointmentService);
 
         const appointment = await createAppointment.execute({
             provider_id,
             user_id,
-            date: parsedDate,
+            date,
         });
 
         return response.json(appointment);
