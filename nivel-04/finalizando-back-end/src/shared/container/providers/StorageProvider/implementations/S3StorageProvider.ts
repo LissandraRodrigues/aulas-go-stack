@@ -28,7 +28,7 @@ class S3StorageProvider implements IStorageProvider {
 
         if (!ContentType) {
 
-            throw new Error("File not found");
+            throw Error("File not found");
 
         }
 
