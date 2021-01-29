@@ -61,7 +61,8 @@ class ListProviderMonthAvailabilityService {
 
             });
 
-            const currentMonth = new Date().getMonth();
+           // const currentMonth = new Date().getMonth();
+           const currentMonth = new Date();
 
             return {
 
