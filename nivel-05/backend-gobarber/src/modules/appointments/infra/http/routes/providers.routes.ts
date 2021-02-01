@@ -26,7 +26,7 @@ providersRouter.get('/:provider_id/day-availability', celebrate({
 
     }
 
-}) ,providerDayAvailabilityController.index);
+}), providerDayAvailabilityController.index);
 
 providersRouter.get('/:provider_id/month-availability', celebrate({
 
@@ -36,6 +36,6 @@ providersRouter.get('/:provider_id/month-availability', celebrate({
 
     }
 
-}) ,providerMonthAvailabilityController.index);
+}), providerMonthAvailabilityController.index);
 
 export default providersRouter;
