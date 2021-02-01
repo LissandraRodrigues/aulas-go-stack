@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { FiClock, FiPower } from 'react-icons/fi';
 import {
@@ -10,12 +10,16 @@ import {
   Content,
   NextAppointment,
   Calendar,
+  Section,
+  Appointment,
 } from './styles';
 
 import logoImg from '../../assets/logo.svg';
 import { useAuth } from '../../hooks/auth';
 
 const Dashboard: React.FC = () => {
+  const [selectedDate, setSelectedDate] = useState(new Date());
+
   const { signOut, user } = useAuth();
 
   return (
@@ -64,6 +68,72 @@ const Dashboard: React.FC = () => {
               </span>
             </div>
           </NextAppointment>
+
+          <Section>
+            <strong> Manhã </strong>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="http://localhost:3333/files/25b6870f04bbfa6642d3-0_720x720.jpg"
+                  alt="Luiza Lissandra"
+                />
+                <strong> Luiza Lissandra </strong>
+              </div>
+            </Appointment>
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="http://localhost:3333/files/25b6870f04bbfa6642d3-0_720x720.jpg"
+                  alt="Luiza Lissandra"
+                />
+                <strong> Luiza Lissandra </strong>
+              </div>
+            </Appointment>
+          </Section>
+
+          <Section>
+            <strong> Tarde </strong>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="http://localhost:3333/files/25b6870f04bbfa6642d3-0_720x720.jpg"
+                  alt="Luiza Lissandra"
+                />
+                <strong> Luiza Lissandra </strong>
+              </div>
+            </Appointment>
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="http://localhost:3333/files/25b6870f04bbfa6642d3-0_720x720.jpg"
+                  alt="Luiza Lissandra"
+                />
+                <strong> Luiza Lissandra </strong>
+              </div>
+            </Appointment>
+          </Section>
         </Schedule>
 
         <Calendar />
