@@ -57,17 +57,17 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-03/iniciando-front-end-web'> Iniciando front-end web </a>
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-03/appgobarber'> Iniciando aplicativo mobile </a>
 	
-- [ ] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/"> Nível 4 </a>
+- [x] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/"> Nível 4 </a>
 
 	- [x] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/arquitetura-e-testes-nodejs"> Arquitetura e testes no NodeJS </a>
 	
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/continuando-back-end'> Continuando back-end do App </a>
 	
-	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/finalizando-back-end'> Finalizando back-end do App </a>
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/finalizando-back-end'> Finalizando back-end do App </a>
 	
 - [ ] Nível 5 
 
-	- [ ] Finalizando front-end web do App
+	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/frontend-gobarber'> Finalizando front-end web do App </a>
 	- [ ] Finalizando front-end mobile do App
 	- [ ] Testes no ReactJS
 
