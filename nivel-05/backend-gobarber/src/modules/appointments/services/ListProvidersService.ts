@@ -4,6 +4,7 @@ import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICa
 
 import User from '@modules/users/infra/typeorm/entities/User';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
+import { classToClass } from 'class-transformer';
 
 interface IRequest {
 
@@ -26,9 +27,11 @@ class ListProvidersService {
 
     public async execute({ user_id }: IRequest): Promise<User[]> {
 
-        let users = await this.cacheProvider.recover<User[]>(
-            `providers-list:${user_id}`
-        );
+       let users = await this.cacheProvider.recover<User[]>(
+           `providers-list:${user_id}`
+       );
+
+        //let users;
 
         if(!users) {
 
@@ -40,7 +43,7 @@ class ListProvidersService {
 
         }
 
-        await this.cacheProvider.save(`providers-list:${user_id}`, users);
+        await this.cacheProvider.save(`providers-list:${user_id}`, classToClass(users));
 
         return users;
     }
