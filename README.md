@@ -67,8 +67,8 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 	
 - [ ] Nível 5 
 
-	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/frontend-gobarber'> Finalizando front-end web do App </a>
-	- [ ] Finalizando front-end mobile do App
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/frontend-gobarber'> Finalizando front-end web do App </a>
+	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/mobile-gobarber'> Finalizando front-end mobile do App </a>
 	- [ ] Testes no ReactJS
 
 - [ ] Nível 6
