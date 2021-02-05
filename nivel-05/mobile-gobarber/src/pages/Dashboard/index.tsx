@@ -53,7 +53,7 @@ const Dashboard: React.FC = () => {
 
     navigate('Profile');
 
-   }, [navigate]);
+  }, [navigate]);
 
 
   const navigateToCreateAppointment = useCallback((providerId: string) => {
