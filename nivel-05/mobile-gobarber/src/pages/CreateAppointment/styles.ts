@@ -149,3 +149,5 @@ export const OpenDatePickerButtonText = styled.Text`
   color: #232129;
 
 `;
+
+export const Schedule = styled.View``;
