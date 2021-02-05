@@ -9,6 +9,7 @@ interface InputProps extends TextInputProps {
 
   name: string;
   icon: string;
+  containerStyle?: object;
 
 }
 
@@ -24,7 +25,7 @@ interface InputRef {
 
 }
 
-const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = ({ name, icon, ...rest }, ref) => {
+const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = ({ name, icon, containerStyle = {}, ...rest }, ref) => {
 
   const [ isFocused, setIsFocused ] = useState(false);
 
@@ -84,7 +85,7 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = ({ name, ico
 
   return (
 
-    <Container isFocused={isFocused} isErrored={!!error}>
+    <Container style={containerStyle} isFocused={isFocused} isErrored={!!error}>
 
       <Icon size={20} color={(isFocused || isFilled ? "#FF9000" : "#666360")} name={icon} />
 
