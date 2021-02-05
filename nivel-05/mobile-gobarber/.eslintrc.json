@@ -36,7 +36,8 @@
       "import/prefer-default-export": "off",
       "no-unused-expressions": "off",
       "no-use-before-define": "off",
-"prettier/prettier": "error",
+      "@typescript-eslint/camelcase": "off",
+      "prettier/prettier": "error",
 
       "import/extensions": [
         "error",
