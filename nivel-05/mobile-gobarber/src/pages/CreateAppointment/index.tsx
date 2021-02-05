@@ -157,8 +157,7 @@ const CreateAppointment: React.FC = () => {
             >
 
               <ProviderAvatar source={{ uri: provider.avatar_url }}></ProviderAvatar>
-              <ProviderName selected={provider.id === selectedProvider}
->
+              <ProviderName selected={provider.id === selectedProvider}>
                 { provider.name }
               </ProviderName>
             </ProviderContainer>
