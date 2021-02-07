@@ -274,11 +274,11 @@ const CreateAppointment: React.FC = () => {
 
           {showDatePicker && (
             <DateTimePicker
-              {...(Platform.OS === 'ios' && { textColor:'#f4ede8' })}
-              mode="date"
-              onChange={handleDateChanged}
-              display={Platform.OS === 'android' ? 'calendar' : 'spinner'}
-              value={selectedDate}
+            {...(Platform.OS === 'ios' && { textColor:'#f4ede8' })}
+            mode="date"
+            onChange={handleDateChanged}
+            display={Platform.OS === 'android' ? 'calendar' : 'spinner'}
+            value={selectedDate}
             />
           )}
 
