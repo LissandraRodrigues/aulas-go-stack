@@ -60,16 +60,14 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 - [x] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/"> Nível 4 </a>
 
 	- [x] <a href="https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/arquitetura-e-testes-nodejs"> Arquitetura e testes no NodeJS </a>
-	
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/continuando-back-end'> Continuando back-end do App </a>
-	
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/finalizando-back-end'> Finalizando back-end do App </a>
 	
 - [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05'> Nível 5 </a>
 
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/frontend-gobarber'> Finalizando front-end web do App </a>
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/mobile-gobarber'> Finalizando front-end mobile do App </a>
-	- [ ] Testes no ReactJS
+	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/testes-reactjs'> Testes no ReactJS </a>
 
 - [ ] Nível 6
 
