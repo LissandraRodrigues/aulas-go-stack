@@ -6,3 +6,6 @@ node_modules
 .env
 ormconfig.json
 coverage
+dist
+build/
+temp/
