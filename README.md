@@ -72,6 +72,9 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 - [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-06'> Nível 6 </a>
 
 	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-06/backend-gobarber'> Deploy de aplicações NodeJS </a>
+		
+		<p> Não há muito o que acrescentar sobre este módulo aqui no GitHub, pois boa parte foi ensinada através do provedor americano de infraestrutura em nuvem <a href='https://www.digitalocean.com/'> Digital Ocean </a> </p>
+
 	- [ ] Deploy de aplicações ReactJS
 	- [ ] Publicação de Apps com React Native
 	
