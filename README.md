@@ -9,7 +9,7 @@
 <h1 align="center"> Aulas do GoStack </h1>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/progress-85%25-brightgreen.svg" alt="PRs Welcome">
+   <img src="https://img.shields.io/badge/progress-90%25-brightgreen.svg" alt="PRs Welcome">
    <img src = "https://img.shields.io/github/issues/LissandraRodrigues/aulas-go-stack" />
    <img src = "https://img.shields.io/github/forks/LissandraRodrigues/aulas-go-stack" />
    <img src = "https://img.shields.io/github/stars/LissandraRodrigues/aulas-go-stack" />
@@ -63,15 +63,15 @@ Veja todos os projetos feitos nos desafios do Go Stack e de outros conteúdos da
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/continuando-back-end'> Continuando back-end do App </a>
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-04/finalizando-back-end'> Finalizando back-end do App </a>
 	
-- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05'> Nível 5 </a>
+- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05'> Nível 5 </a>
 
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/frontend-gobarber'> Finalizando front-end web do App </a>
 	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/mobile-gobarber'> Finalizando front-end mobile do App </a>
-	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/testes-reactjs'> Testes no ReactJS </a>
+	- [x] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-05/testes-reactjs'> Testes no ReactJS </a>
 
-- [ ] Nível 6
+- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-06'> Nível 6 </a>
 
-	- [ ] Deploy de aplicações NodeJS
+	- [ ] <a href='https://github.com/LissandraRodrigues/aulas-go-stack/tree/main/nivel-06/backend-gobarber'> Deploy de aplicações NodeJS </a>
 	- [ ] Deploy de aplicações ReactJS
 	- [ ] Publicação de Apps com React Native
 	
